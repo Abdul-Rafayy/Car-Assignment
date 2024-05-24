@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://media.istockphoto.com/id/627024026/photo/roadside-with-cityscape-background.jpg?s=612x612&w=0&k=20&c=Pdcmrmwg8eNtbtzl5Vkxz3lF5UQEOkZ-8r1_sRr68F8=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    overflow: hidden;
+}
+
+.car {
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    width: 20%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+.controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.traffic-light {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.light {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.active {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .car {
+        width: 30%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .traffic-light {
+        width: 40px;
+        height: 120px;
+    }
+
+    .light {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .car {
+        width: 40%;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .traffic-light {
+        width: 30px;
+        height: 90px;
+    }
+
+    .light {
+        width: 20px;
+        height: 20px;
+    }
+}
